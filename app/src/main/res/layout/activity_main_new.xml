@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number|numberDecimal"
+        android:ems="10"
+        android:id="@+id/inputAmount"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:hint="@string/inputTextLabel" />
+
+    <RadioGroup
+        android:layout_width="194dp"
+        android:layout_height="132dp"
+        android:id="@+id/radioGroupConvertFrom" >
+
+        <RadioButton
+            android:text="@string/radioAudLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioAud"
+            android:layout_marginLeft="35dp" />
+
+        <RadioButton
+            android:text="@string/radioCadLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioCad"
+            android:layout_marginLeft="35dp" />
+
+        <RadioButton
+            android:text="@string/radioInrLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioInr"
+            android:layout_marginLeft="35dp" />
+    </RadioGroup>
+
+    <TextView
+        android:text="@string/labelConvertTo"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelConvertTo"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_weight="0.05"
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
+
+    <RadioGroup
+        android:layout_width="208dp"
+        android:layout_height="79dp"
+        android:id="@+id/radioGroupConvertTo" >
+
+        <RadioButton
+            android:text="@string/radioUsdLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioUsd"
+            android:layout_marginLeft="35dp" />
+
+        <RadioButton
+            android:text="@string/radioGbpLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGbp"
+            android:layout_marginLeft="35dp" />
+    </RadioGroup>
+
+    <Button
+        android:text="@string/convertButtonLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonConvert"
+        android:textAllCaps="false"
+        android:width="150dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultAmount"
+        android:layout_marginTop="30dp"
+        android:layout_weight="0.15"
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:text="@string/clearButtonLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonClear"
+        android:textAllCaps="false"
+        android:width="150dp"
+        android:onClick="onClear"/>
+
+</LinearLayout>
